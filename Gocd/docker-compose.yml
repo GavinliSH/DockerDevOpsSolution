@@ -1,0 +1,24 @@
+version: '3'
+services:
+  gocd-server:
+    build:
+      context: ./gocd-server
+      dockerfile: Dockerfile
+    ports:
+      - "8153:8153"
+      - "8154:8154"
+    container_name: go-server-1
+    restart: always
+  gocd-agent-see:
+    build:
+      context: ./gocd-agent-see
+      dockerfile: Dockerfile
+    depends_on:
+      - gocd-server
+    links:
+      - 'gocd-server' 
+    environment:
+      GO_SERVER_URL: https://gocd-server:8154/go
+    container_name: go-agent-see
+    restart: always
+

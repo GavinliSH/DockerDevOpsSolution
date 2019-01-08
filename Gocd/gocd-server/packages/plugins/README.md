@@ -1,0 +1,1 @@
+* packages/plugins - gocd server plugins,将下载的[Good plugins](https://www.gocd.org/plugins/)放在当前目录

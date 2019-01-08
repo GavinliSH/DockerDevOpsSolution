@@ -1,0 +1,9 @@
+zeep
+pathlib
+ddt
+pandas
+pylint
+antlr4-python3-runtime
+numpy
+flawfinder
+requests
