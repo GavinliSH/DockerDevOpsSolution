@@ -1,0 +1,7 @@
+maven-plugin:latest
+git:latest
+gradle:latest
+ssh:latest
+blueocean:latest
+ssh-slaves:latest
+jdk-tool:latest
