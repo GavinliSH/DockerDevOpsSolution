@@ -1,0 +1,9 @@
+*.war
+*.exe
+*.zip
+*.tar.gz
+*.tar
+*.tgz
+id_rsa*
+*.jar
+*.tar.xz
